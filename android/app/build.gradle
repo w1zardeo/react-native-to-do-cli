@@ -105,10 +105,12 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    
 }
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
+    // classpath("com.android.tools.build:gradle:8.1.0")
     implementation("com.facebook.react:react-android")
 
     if (hermesEnabled.toBoolean()) {
